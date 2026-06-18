@@ -161,6 +161,41 @@ Delocalization_Score/
 
 ---
 
+## Data
+
+### 📥 Download the Dataset
+
+The dataset (22 MALDI-MSI samples + H&E images) is hosted externally due to file size.
+
+**[Download Dataset (SharePoint)](https://liveutk-my.sharepoint.com/:f:/g/personal/ajarrah1_vols_utk_edu/EqUysi_9h2BOnOSajIEcq64BhPRXaRExNfXPcdQ12BxlRg?e=wpZNMZ)**
+
+Password:
+data@CIL-UTK
+
+After downloading, place the files in the corresponding subfolders under `data/`. See [`data/README.md`](data/README.md) for full details.
+
+### File Naming Conventions
+
+**imzML files** follow this pattern:
+
+```
+YYYYMMDD_<model><group>_<age><sex>_<slide>_pos_<animal#>_<section>
+```
+
+Examples:
+- `20230828_3xTgControl_youngfemale_5_pos_1_1` → Control, young female, slide 1, #5, section 1
+- `20230914_3xTgAD_youngfemale_1_pos_3_1` → AD, young female, slide 3, #1, section 1
+
+**H&E image files** use a shorthand:
+
+| Code | Meaning | Example |
+|---|---|---|
+| `y` / `o` | Young / Old (Aged) | `yfm1_c` → Young female 1, Control |
+| `f` / `m` | Female / Male | `ofm1_ad` → Old female 1, AD |
+| `_c` / `_ad` | Control / AD | `ofm2_ad` → Old female 2, AD |
+
+---
+
 ## Usage
 
 Each script is designed to run independently. Edit the **CONFIGURATION** block at the top of each file to set filenames, parameters, and metadata before running.
@@ -436,7 +471,7 @@ Department of Biomedical Engineering
 Tickle College of Engineering, University of Tennessee, Knoxville  
 
 - 🌐 [crouchimaging.utk.edu](https://crouchimaging.utk.edu)  
-- 📧 acrouch5@utk.edu
-- 📧 alexajarrahi@gmail.com   
+- 📧 acrouch5@utk.edu [Dr. Colleen Crouch]
+- 📧 alexajarrahi@gmail.com [Alex Jarrahi]  
 - 📷 Instagram: [@crouch.imaging.lab](https://instagram.com/crouch.imaging.lab)  
 - 💻 GitHub: [CIL-UTK](https://github.com/CIL-UTK)
