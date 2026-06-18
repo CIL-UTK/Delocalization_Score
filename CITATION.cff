@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+title: "Delocalization Score for MALDI-MSI"
+message: "If you use this software, please cite it as below."
+type: software
+license: MIT
+repository-code: "https://github.com/CIL-UTK/Delocalization_Score"
+url: "https://crouchimaging.utk.edu"
+authors:
+  - given-names: Amin
+    family-names: Jarrahi
+    email: ajarrah1@vols.utk.edu
+    affiliation: "Department of Biomedical Engineering, University of Tennessee, Knoxville"
+    orcid: ""
+  - given-names: Allison
+    family-names: Jones
+    affiliation: "Department of Biomedical Engineering, University of Tennessee, Knoxville"
+  - given-names: Weisheng
+    family-names: Tang
+    affiliation: "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville"
+  - given-names: Hairong
+    family-names: Qi
+    affiliation: "Department of Electrical Engineering and Computer Science, University of Tennessee, Knoxville"
+  - given-names: Anna Colleen
+    family-names: Crouch
+    email: acrouch5@utk.edu
+    affiliation: "Department of Biomedical Engineering, University of Tennessee, Knoxville"
+preferred-citation:
+  type: article
+  title: "Mathematical Framework for Quantifying Delocalization in MALDI-MSI via a Composite Scoring Approach"
+  authors:
+    - given-names: Amin
+      family-names: Jarrahi
+    - given-names: Allison
+      family-names: Jones
+    - given-names: Weisheng
+      family-names: Tang
+    - given-names: Hairong
+      family-names: Qi
+    - given-names: Anna Colleen
+      family-names: Crouch
+  journal: "ACS Measurement Science Au"
+  volume: 6
+  issue: 1
+  start: 134
+  end: 149
+  year: 2026
+  doi: "10.1021/acsmeasuresciau.5c00148"
