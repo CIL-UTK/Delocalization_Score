@@ -436,6 +436,7 @@ Department of Biomedical Engineering
 Tickle College of Engineering, University of Tennessee, Knoxville  
 
 - 🌐 [crouchimaging.utk.edu](https://crouchimaging.utk.edu)  
-- 📧 acrouch5@utk.edu  
+- 📧 acrouch5@utk.edu
+- 📧 alexajarrahi@gmail.com   
 - 📷 Instagram: [@crouch.imaging.lab](https://instagram.com/crouch.imaging.lab)  
 - 💻 GitHub: [CIL-UTK](https://github.com/CIL-UTK)
