@@ -17,12 +17,19 @@ After downloading, organize the files as follows:
 
 ```
 data/
-├── imzml_data/              ← Raw imzML + ibd files
-│   ├── sample_1.imzml
-│   └── sample_1.ibd
+├── imzml_data/              ← Raw imzML + ibd files (22 samples)
+│   ├── 20230828_3xTgControl_youngfemale_5_pos_1_1.imzml
+│   ├── 20230828_3xTgControl_youngfemale_5_pos_1_1.ibd
+│   ├── 20230914_3xTgAD_youngfemale_1_pos_3_1.imzml
+│   ├── 20230914_3xTgAD_youngfemale_1_pos_3_1.ibd
+│   └── ...
 │
 ├── H&E_images/              ← H&E stained tissue images
-│   └── sample_1_HE.jpg
+│   ├── yfm1_c.jpg
+│   ├── ofm1_c.jpg
+│   ├── ofm1_ad.jpg
+│   ├── ofm2_ad.jpg
+│   └── ...
 │
 ├── raw_h5ad/                ← Auto-created by Step 1
 │   └── (generated .h5ad files)
@@ -37,8 +44,45 @@ data/
     └── (generated .h5ad files)
 ```
 
+## File Naming Conventions
+
+### imzML Files
+
+The imzML filenames follow this pattern:
+
+```
+YYYYMMDD_<model><group>_<age><sex>_<animal#>_pos_<slide>_<section>
+```
+
+| Component | Example | Meaning |
+|---|---|---|
+| `20230828` | Date | Acquisition date |
+| `3xTgControl` | Model + Group | 3xTg mouse model, Control group |
+| `3xTgAD` | Model + Group | 3xTg mouse model, AD group |
+| `youngfemale` | Age + Sex | Young female animal |
+| `5` | Slide | Slide 5 |
+| `pos` | Polarity | Positive ion mode |
+| `1_1` | Animal number_Section | Animal 1, Section 1 |
+
+### H&E Image Files
+
+The H&E image filenames follow a shorthand pattern:
+
+```
+<age><sex><animal#>_<group>.jpg
+```
+
+| Code | Meaning | Example |
+|---|---|---|
+| `y` | Young | `yfm1_c` → Young female 1, Control |
+| `o` | Old (Aged) | `ofm1_c` → Old/Aged female 1, Control |
+| `f` | Female | |
+| `m` | Male | |
+| `_c` | Control | `yfm1_c` → Young female 1, Control |
+| `_ad` | AD (Alzheimer's Disease) | `ofm2_ad` → Old/Aged female 2, AD |
+
 ## Notes
 
 - Only `imzml_data/` and `H&E_images/` need to be populated manually. The other subfolders are created automatically by the pipeline scripts.
 - All `.h5ad`, `.imzml`, `.ibd`, and image files are excluded from version control via `.gitignore`.
-- Update the `WORKING_DIR` variable in each script under `src/` to point to this `data/` directory.
+- The `WORKING_DIR` variable in each script under `src/` auto-resolves to this `data/` directory — no manual path editing needed.
