@@ -1,0 +1,53 @@
+he Repository
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.env/
+.venv/
+
+# IDE / editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data files — too large for git
+data/imzml_data/*.imzml
+data/imzml_data/*.ibd
+data/raw_h5ad/*.h5ad
+data/processed_h5ad/*.h5ad
+data/overlaid_h5ad/*.h5ad
+data/delocalization_score_result_h5ad/*.h5ad
+
+# H&E images (optional, may be large)
+data/H&E_images/*.tif
+data/H&E_images/*.tiff
+data/H&E_images/*.png
+data/H&E_images/*.jpg
+
+# Output figures
+figures/
+*.png
+*.pdf
+*.svg
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# Logs
+*.log
