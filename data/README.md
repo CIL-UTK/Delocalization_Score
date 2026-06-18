@@ -51,7 +51,7 @@ data/
 The imzML filenames follow this pattern:
 
 ```
-YYYYMMDD_<model><group>_<age><sex>_<animal#>_pos_<slide>_<section>
+YYYYMMDD_<model><group>_<age><sex>_<slide>_pos_<animal#>_<section>
 ```
 
 | Component | Example | Meaning |
