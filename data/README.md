@@ -76,7 +76,7 @@ The H&E image filenames follow a shorthand pattern:
 |---|---|---|
 | `y` | Young | `yfm1_c` → Young female 1, Control |
 | `o` | Old (Aged) | `ofm1_c` → Old/Aged female 1, Control |
-| `f` | Female | |
+| `fm` | Female | |
 | `m` | Male | |
 | `_c` | Control | `yfm1_c` → Young female 1, Control |
 | `_ad` | AD (Alzheimer's Disease) | `ofm2_ad` → Old/Aged female 2, AD |
